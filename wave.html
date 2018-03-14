@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Wave Simulation</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width" />
+	</head>
+	<body>
+	    <div class="header">
+	        <div class="container">
+		        <h1 class="main-heading">Wave Simulation</h1>
+		    </div>
+		</div>
+		<div class="canvas">
+		    <div class="container">
+			    <canvas id="screen" width="1140" height="360">
+			        Not supported!
+			    </canvas>
+			</div>
+		</div>
+		<div class="controls">
+		    <div class="container">
+          <div class="parameter">
+            <label for="fun">Function (f) :</label>
+            <select id="fun">
+              <option>Sine</option>
+              <option>Square</option>
+              <option>Triangular</option>
+              <option>Saw Tooth</option>
+            </select>
+          </div>
+          <br>
+			    <div class="parameter">
+			        <label for="amp">Amplitude (a) :</label>
+			        <input id="amp" type="text" value="50">pixels
+			    </div>
+			    <div class="parameter">
+			        <label for="prd">Time period (T) :</label>
+			        <input id="prd" type="text" value="1">sec
+			    </div>
+			    <div class="parameter">
+			        <label for="vel">Speed of the wave (v) :</label>
+			        <input id="vel" type="text" value="150">pixels/sec
+			    </div>
+			    <br />
+			    <div class="button" id="btn">Start</div>
+			    <div class="button" id="rst">Reset</div>
+			</div>
+		</div>
+		<div class="footer">
+		    <div class="container">
+            <p class="copyright">
+                6th Semester Physics project &middot; Made by Shivaprasad V &middot; MG15CPHR34
+            </p>
+			</div>
+		</div> 
+		<script type="text/javascript" src="wave.js"></script>
+	</body>
+</html>

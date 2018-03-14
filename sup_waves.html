@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Superposition of Waves</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width" />
+    <style>
+      .sub-param {
+          display: inline-block;
+          background-color: #f2f2f2;
+          border: 1px solid #e4e4e4;
+          border-radius: 8px;
+          padding: 20px;
+          margin-top: 20px;
+      }
+    </style>
+	</head>
+	<body>
+	    <div class="header">
+	        <div class="container">
+		        <h1 class="main-heading">Superposition of Waves</h1>
+		    </div>
+		</div>
+		<div class="canvas">
+		    <div class="container">
+			    <canvas id="screen" width="1140" height="360">
+			        Not supported!
+			    </canvas>
+			</div>
+		</div>
+		<div class="controls">
+		    <div class="container">
+          <div class="parameter">
+            <label for="fun">Function (f) :</label>
+            <select id="fun">
+              <option>Sine</option>
+              <option>Square</option>
+              <option>Triangular</option>
+              <option>Saw Tooth</option>
+            </select>
+          </div>
+			    <div class="parameter">
+			        <label for="vel">Speed of each wave (v) :</label>
+			        <input id="vel" type="text" value="150">pixels/sec
+			    </div>
+        </div>
+        <div class="container sub-param">
+			    <div class="parameter">
+              <label for="amp1">S1 Amplitude (a<sub>1</sub>) :</label>
+			        <input id="amp1" type="text" value="50">pixels
+			    </div>
+			    <div class="parameter">
+              <label for="amp2">S2 Amplitude (a<sub>2</sub>) :</label>
+			        <input id="amp2" type="text" value="50">pixels
+			    </div>
+          <br>
+			    <div class="parameter">
+              <label for="prd1">S1 Time period (T<sub>1</sub>) :</label>
+			        <input id="prd1" type="text" value="1">sec
+			    </div>
+			    <div class="parameter">
+              <label for="prd2">S2 Time period (T<sub>2</sub>) :</label>
+			        <input id="prd2" type="text" value="1">sec
+			    </div>
+			</div>
+      <br>
+      <div class="button" id="btn">Start</div>
+      <div class="button" id="reset-btn">Reset</div>
+		</div>
+		<div class="footer">
+		    <div class="container">
+            <p class="copyright">
+                6th Semester Physics project &middot; Made by Shivaprasad V &middot; MG15CPHR34
+            </p>
+			</div>
+		</div>
+		<script type="text/javascript" src="sup_waves.js"></script>
+	</body>
+</html>
