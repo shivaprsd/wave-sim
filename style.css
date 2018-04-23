@@ -59,10 +59,17 @@ body {
     text-align: center;
 }
 .parameter input, .parameter select {
-    margin: 0 10px 10px 12px;
+    margin: 0 10px 25px 12px;
     font-size: 16px;
 }
+.parameter input[type="range"] {
+    width: 25vw;
+    min-width: 200px;
+    border: none;
+    margin: 0;
+}
 .parameter label { cursor: pointer; }
+.parameter span { color: #f24200; }
 
 .button {
     display: inline-block;
@@ -103,6 +110,7 @@ body {
 @media (max-width:1200px) {
     #screen { width: 720px; }
     .parameter { width: 100%; margin: 0; }
+    .parameter input[type="range"]{ width: 50vw; max-width: 500px; }
     .copyright { margin-left: 0; }
 }
 

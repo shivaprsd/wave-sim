@@ -83,11 +83,17 @@ function drawArrow(xPos,yPos,axis,ori) {
 
 /* Function to update the values of a,T and v */
 function updateParameters () {
-    a1 = document.getElementById('amp1').value;
-    a2 = document.getElementById('amp2').value;
-    T1 = document.getElementById('prd1').value;
-    T2 = document.getElementById('prd2').value;
-    v = document.getElementById('vel').value;
+    a1 = parseFloat(document.getElementById('amp1').value);
+    a2 = parseFloat(document.getElementById('amp2').value);
+    T1 = parseFloat(document.getElementById('prd1').value);
+    T2 = parseFloat(document.getElementById('prd2').value);
+    v = parseFloat(document.getElementById('vel').value);
+
+    document.getElementById('amp1-val').innerHTML = a1.toFixed(0);
+    document.getElementById('amp2-val').innerHTML = a2.toFixed(0);
+    document.getElementById('prd1-val').innerHTML = T1.toFixed(2);
+    document.getElementById('prd2-val').innerHTML = T2.toFixed(2);
+    document.getElementById('vel-val').innerHTML = v.toFixed(0);
 }
 
 /* Calculate the waves at a given time upto a given dist */

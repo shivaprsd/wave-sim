@@ -73,9 +73,12 @@ function drawArrow(xPos,yPos,axis,ori) {
 
 /* Function to update the values of a,T and v */ 
 function updateParameters () {
-    a = document.getElementById('amp').value;
-    T = document.getElementById('prd').value;
-    v = document.getElementById('vel').value;
+    a = parseFloat(document.getElementById('amp').value);
+    T = parseFloat(document.getElementById('prd').value);
+    v = parseFloat(document.getElementById('vel').value);
+    document.getElementById('amp-val').innerHTML = a.toFixed(0)
+    document.getElementById('prd-val').innerHTML = T.toFixed(2)
+    document.getElementById('vel-val').innerHTML = v.toFixed(0)
 }
 
 /* Function to draw the full wave at a given instance of time */
