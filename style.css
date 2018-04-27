@@ -17,7 +17,7 @@ body {
     max-width: 1200px;
     padding: 0 30px;
     margin: 0 auto;
- }
+}
  
 .header {
     padding: 30px 0; 
@@ -102,7 +102,7 @@ body {
 .copyright {
     margin: 0;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     margin-left: 40px;
 }
